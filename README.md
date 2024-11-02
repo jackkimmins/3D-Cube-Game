@@ -1,3 +1,4 @@
+![Game Example Sceenshot](https://raw.githubusercontent.com/jackkimmins/3D-Cube-Game/refs/heads/main/screenshots/GameScreenshot.jpg)
 # C++ WASM 3D-Cube-Game
 3D-Cube-Game is a browser-based 3D block game developed using C++ and WebAssembly, compiled through Emscripten. This project was an exploration into SDL2 as the primary graphics library, which provided both unique challenges and learning opportunities into low-level graphics rendering.
 

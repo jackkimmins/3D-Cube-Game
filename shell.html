@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Cube Game</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #87CEEB;
+        }
+        canvas {
+            border: 2px solid black;
+            background-color: #F0F8FF;
+            width: 90vw;
+            aspect-ratio: 16/9;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Game canvas -->
+    <canvas id="canvas" oncontextmenu="event.preventDefault()" tabindex="1"></canvas>
+
+    <script type="text/javascript">
+        var Module = {
+            preRun: [],
+            postRun: [],
+            canvas: (function() {
+                var canvas = document.getElementById('canvas');
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                return canvas;
+            })(),
+            onRuntimeInitialized: function() {
+                console.log("WebAssembly module initialized.");
+            }
+        };
+    
+    </script>
+    
+    {{{ SCRIPT }}}
+</body>
+</html>

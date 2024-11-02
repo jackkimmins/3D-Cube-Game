@@ -1,0 +1,2 @@
+# Ignore Object files
+build/*.o
